@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1302194027_Soal3</title>
+	<link type="text/css" rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<center>
+		<div class="main">
+			<div class="title">Hitung Pythagoras</div>
+	  		<input type="number" class="form-control" id="a" placeholder="Nilai A">
+		    <input type="number" class="form-control" id="b" placeholder="Nilai B">
+		    <button onclick="phytagoras()">Hitung!</button>
+		    <div class="form-group">
+		      	<input type="number" class="form-control" id="hasil" disabled>
+		    </div>
+	    </div>
+	</center>
+	
+	<script type="text/javascript">
+		function phytagoras(){
+   			var x = document.getElementById('a').value;
+   			var y = document.getElementById('b').value;
+
+			na = x * x
+    		nb = y * y
+   			x = na + nb;
+    		jumlah = Math.sqrt(x)
+
+			/*output*/
+   			document.getElementById("hasil").value = jumlah;
+		}
+	</script>
+
+</body>
+</html>
